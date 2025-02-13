@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'BreakingBad';
-  src: url(./public/assets/Breaking\ Bad.ttf);
+  src: url(../public/assets/Breaking\ Bad.ttf);
 }
 
 * {
@@ -11,16 +11,34 @@
 :root {
   --primary-color: white;
   --secondary-color: black;
+  --bg-color: #0c3e11;
+  --big-font: 40px;
+  --small-font: 10px;
 
   color: white;
   font-family: 'BreakingBad', Helvetica;
 }
 
 body {
-  background-image: url('./public/img/fondo.jpg');
+  background-image: url('../public/img/fondo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+main {
+  font-size: var(--big-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+}
+
+.main_logo {
+  width: 200px;
+  height: 200px;
+  margin-top: 1em;
 }
 
 .main_poster {
