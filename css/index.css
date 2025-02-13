@@ -24,6 +24,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+
+  display: flex;
+  justify-content: center;
 }
 main {
   font-size: var(--big-font);
@@ -33,6 +36,32 @@ main {
   align-items: center;
   text-align: center;
   gap: 1em;
+}
+
+h1 {
+  font-size: var(--big-font);
+}
+
+.bg-color {
+  background-color: var(--bg-color);
+}
+.fontFamily {
+  font-family: Helvetica;
+}
+
+.disCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.smText {
+  font-size: var(--small-font);
+}
+
+.borderForms {
+  border: 1px solid white;
+  padding: 1em;
+  margin: 1em;
 }
 
 .main_logo {
@@ -46,4 +75,44 @@ main {
   height: 300px;
   border: 10px outset brown;
   border-radius: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  gap: 1em;
+}
+
+form > h1 {
+  text-align: center;
+}
+.form_breaking {
+  background-color: rgba(128, 128, 128, 0.572);
+  padding: 2em;
+}
+.form_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.btn {
+  padding: 0.75em 1.25em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
 }
