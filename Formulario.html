@@ -11,7 +11,7 @@
       type="image/x-icon"
     />
   </head>
-  <body class="fontFamily">
+  <body class="fontFamily bg-image">
     <form
       action="mailto:raul.rodriguez@proeducaglobal.com"
       method="post"
@@ -19,8 +19,8 @@
     >
       <h1>Breaking Bad - Que comience el juego!</h1>
 
-      <div class="datos_personales borderForms">
-        <h3>Datos personales:</h3>
+      <fieldset class="datos_personales borderForms">
+        <legend>Datos personales:</legend>
         <div class="datos_personales_entrada disCol">
           <label for="nombre">Nombre </label>
           <input type="text" name="nombre" required />
@@ -31,8 +31,8 @@
           <label for="email">Email </label>
           <input type="email" name="email" required />
         </div>
-        <div>
-          <h3>Sexo:</h3>
+        <div class="disCol">
+          <h3>Sexo</h3>
           <div>
             <label for="hombre">Hombre </label>
             <input type="radio" name="sexo" value="hombre" />
@@ -40,16 +40,16 @@
             <input type="radio" name="sexo" value="mujer" />
           </div>
         </div>
-        <div>
-          <h3>Fecha de nacimiento:</h3>
+        <div class="disCol">
+          <h3>Fecha de nacimiento</h3>
           <div>
             <label for="fnacimiento"> </label>
             <input type="date" name="fnacimiento" />
           </div>
         </div>
-      </div>
-      <div class="datos_personaje borderForms">
-        <h3>Seleccione un personaje:</h3>
+      </fieldset>
+      <fieldset class="datos_personaje borderForms">
+        <legend>Seleccione un personaje:</legend>
         <div>
           <select name="personaje" id="">
             <option value="jessie">Jessie Pinkman</option>
@@ -60,9 +60,9 @@
             <option value="otros">Otros personajes</option>
           </select>
         </div>
-      </div>
-      <div class="datos_comentario borderForms">
-        <h3>Comentario:</h3>
+      </fieldset>
+      <fieldset class="datos_comentario borderForms">
+        <legend>Comentario:</legend>
         <div>
           <textarea
             name="comentario"
@@ -71,7 +71,7 @@
             cols="50"
           ></textarea>
         </div>
-      </div>
+      </fieldset>
       <div class="form_btn">
         <button type="submit" class="btn">Submit</button>
         <button type="reset" class="btn">Reset</button>

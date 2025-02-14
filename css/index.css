@@ -12,6 +12,18 @@
   --primary-color: white;
   --secondary-color: black;
   --bg-color: #0c3e11;
+
+  --table-bgcolor: #2b2c24;
+  --tb-primarycolor: #b8dc15;
+  --tb-secondarycolor: #d4e682;
+  --tb-thirdcolor: #f4f8dc;
+  --tb-darkcolor: #89a41a;
+  --tb-graycolor: #bcc49f;
+  --tb-graygreencolor: #637126;
+  --tb-graygreencolor2: #828d50;
+  --tb-lastRowColor: #c0c628;
+  --tb--pruple: #ab8fcb;
+
   --big-font: 40px;
   --small-font: 10px;
 
@@ -19,12 +31,10 @@
   font-family: 'BreakingBad', Helvetica;
 }
 
-body {
-  background-image: url('../public/img/fondo.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+/* GENERAL */
 
+body {
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -41,9 +51,45 @@ main {
 h1 {
   font-size: var(--big-font);
 }
+h3 {
+  font-size: 0.7rem;
+}
+
+legend {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+label {
+  font-size: var(--small-font);
+  font-weight: 900;
+}
+
+table {
+  background-color: var(--table-bgcolor);
+  margin: 1em;
+  width: 700px;
+}
+
+td {
+  color: black;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border: 7px solid var(--table-bgcolor);
+  padding: 10px 15px;
+}
 
 .bg-color {
   background-color: var(--bg-color);
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-image {
+  background-image: url('../public/img/fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fontFamily {
   font-family: Helvetica;
@@ -52,10 +98,15 @@ h1 {
 .disCol {
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
+  margin-top: 1em;
 }
 
 .smText {
   font-size: var(--small-font);
+}
+.lgText {
+  font-weight: 900;
 }
 
 .borderForms {
@@ -63,6 +114,50 @@ h1 {
   padding: 1em;
   margin: 1em;
 }
+
+.tbColor_1 {
+  background-color: var(--tb-primarycolor);
+}
+.tbColor_2 {
+  background-color: var(--tb-secondarycolor);
+}
+
+.tbColor_3 {
+  background-color: var(--tb-thirdcolor);
+}
+
+.tbColor_dk {
+  background-color: var(--tb-darkcolor);
+}
+
+.tbColor_gray1 {
+  background-color: var(--tb-graycolor);
+}
+
+.tbColor_graygreen {
+  background-color: var(--tb-graygreencolor);
+}
+
+.tbColor_greygreen2 {
+  background-color: var(--tb-graygreencolor2);
+}
+
+.tbColor_purple {
+  background-color: var(--tb--pruple);
+}
+
+.tbEmpty {
+  background-color: var(--table-bgcolor);
+}
+
+.borderRed {
+  border: 5px solid red;
+}
+.borderBlue {
+  border: 5px solid blue;
+}
+
+/* CLASSES */
 
 .main_logo {
   width: 200px;
