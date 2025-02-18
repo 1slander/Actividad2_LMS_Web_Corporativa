@@ -29,7 +29,6 @@
   --big-font: 40px;
   --small-font: 10px;
 
-  color: white;
   font-family: 'BreakingBad', Helvetica;
 }
 
@@ -40,6 +39,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 1em;
+  color: white;
 }
 main {
   font-size: var(--big-font);
@@ -74,7 +74,7 @@ table {
   width: 770px;
   height: 560px;
   text-align: center;
-  padding: 5px;
+  border-spacing: 5px;
 }
 tr {
   height: 70px;
@@ -84,8 +84,6 @@ td {
   color: black;
   width: 70px;
   height: 70px;
-  border: 1px solid var(--table-bgcolor);
-  /* padding: 5px; */
 }
 
 table td img {
@@ -174,7 +172,7 @@ table td img {
   border: 5px solid blue;
 }
 
-/* CLASSES */
+/* MAIN */
 
 .main_logo {
   width: 200px;
@@ -188,6 +186,8 @@ table td img {
   border: 10px outset brown;
   border-radius: 22px;
 }
+
+/* FORMS */
 
 form {
   display: flex;
@@ -228,6 +228,8 @@ form > h1 {
   background-color: var(--primary-color);
   color: var(--bg-color);
 }
+
+/* TABLE */
 
 .imgHa {
   background-image: url('../public/img/tablaPeriodica/hankschrader.png');
