@@ -23,6 +23,7 @@
   --tb-graygreencolor2: #828d50;
   --tb-lastRowColor: #c0c628;
   --tb--pruple: #ab8fcb;
+  --tb--smallTb: #c8c487;
 
   --big-font: 40px;
   --small-font: 10px;
@@ -148,6 +149,10 @@ td {
 
 .tbEmpty {
   background-color: var(--table-bgcolor);
+}
+
+.tbSmall {
+  background-color: var(--tb-lastRowColor);
 }
 
 .borderRed {
