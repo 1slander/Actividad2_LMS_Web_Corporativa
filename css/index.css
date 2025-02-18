@@ -5,6 +5,7 @@
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -38,6 +39,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  gap: 1em;
 }
 main {
   font-size: var(--big-font);
@@ -69,16 +71,26 @@ label {
 table {
   background-color: var(--table-bgcolor);
   margin: 1em;
-  width: 700px;
+  width: 770px;
+  height: 560px;
+  text-align: center;
+  padding: 5px;
+}
+tr {
+  height: 70px;
 }
 
 td {
   color: black;
-  background-color: white;
   width: 70px;
   height: 70px;
-  border: 7px solid var(--table-bgcolor);
-  padding: 10px 15px;
+  border: 1px solid var(--table-bgcolor);
+  /* padding: 5px; */
+}
+
+table td img {
+  width: 40px;
+  height: 40px;
 }
 
 .bg-color {
@@ -215,4 +227,20 @@ form > h1 {
 .btn:focus {
   background-color: var(--primary-color);
   color: var(--bg-color);
+}
+
+.imgHa {
+  background-image: url('../public/img/Tabla Periódica/hankschrader.png');
+
+  background-size: 70px 140px;
+  background-position: center;
+}
+
+.tbl_title {
+  margin-top: 500px;
+}
+
+.tbl_foot {
+  width: 700px;
+  height: 140px;
 }
