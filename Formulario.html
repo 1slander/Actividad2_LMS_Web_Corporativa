@@ -21,7 +21,7 @@
 
       <fieldset class="datos_personales borderForms">
         <legend>Datos personales:</legend>
-        <div class="datos_personales_entrada disCol">
+        <div class="datos_personales_entrada disCol datosp">
           <label for="nombre">Nombre </label>
           <input type="text" name="nombre" required />
           <label for="apellidos">Apellidos </label>
@@ -33,11 +33,15 @@
         </div>
         <div class="disCol">
           <h3>Sexo</h3>
-          <div>
-            <label for="hombre">Hombre </label>
-            <input type="radio" name="sexo" value="hombre" />
-            <label for="mujer">Mujer </label>
-            <input type="radio" name="sexo" value="mujer" />
+          <div class="datosSexo">
+            <div>
+              <label for="hombre">Hombre </label>
+              <input type="radio" name="sexo" value="hombre" />
+            </div>
+            <div>
+              <label for="mujer">Mujer </label>
+              <input type="radio" name="sexo" value="mujer" />
+            </div>
           </div>
         </div>
         <div class="disCol">
@@ -73,9 +77,11 @@
         </div>
       </fieldset>
       <div class="form_btn">
-        <button type="submit" class="btn">Submit</button>
-        <button type="reset" class="btn">Reset</button>
         <input type="file" name="archivo" />
+        <div class="menu_btn">
+          <button type="submit" class="btn">Submit</button>
+          <button type="reset" class="btn">Reset</button>
+        </div>
       </div>
     </form>
   </body>

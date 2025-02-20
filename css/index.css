@@ -35,20 +35,14 @@
 /* GENERAL */
 
 body {
-  /* min-height: 100vh; */
-  display: flex;
-  justify-content: center;
-  gap: 1em;
+  margin: auto;
   color: white;
 }
 main {
   font-size: var(--big-font);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+
   text-align: center;
-  gap: 1em;
 }
 
 h1 {
@@ -70,11 +64,11 @@ label {
 
 table {
   background-color: var(--table-bgcolor);
-  margin: 1em;
   width: 770px;
   height: 560px;
   text-align: center;
   border-spacing: 5px;
+  margin: 1em auto;
 }
 
 td {
@@ -84,7 +78,6 @@ td {
 }
 
 table td img {
-  /* width: 40px; */
   height: 40px;
 }
 
@@ -102,12 +95,25 @@ table td img {
 .fontFamily {
   font-family: Helvetica;
 }
-
 .disCol {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+.disCol label,
+.disCol input {
+  display: block;
+  width: 100%;
+
   margin-top: 1em;
+}
+
+.datosSexo label,
+.datosSexo input {
+  display: inline;
+  padding-right: 1em;
+  width: 40px;
+
+  margin: 1em 0;
 }
 
 .smText {
@@ -177,6 +183,10 @@ table td img {
   margin-top: 1em;
 }
 
+.main_title {
+  margin: 1em 0;
+}
+
 .main_poster {
   width: 700px;
   height: 300px;
@@ -187,29 +197,35 @@ table td img {
 /* FORMS */
 
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  gap: 1em;
+  margin: 5em auto;
+  width: 500px;
 }
 
 form > h1 {
   text-align: center;
 }
+
+form input {
+  padding: 5px;
+  font-weight: 500;
+}
 .form_breaking {
   background-color: rgba(128, 128, 128, 0.572);
   padding: 2em;
 }
-.form_btn {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 2em;
+.form_btn button,
+.form_btn input {
+  display: inline;
+}
+
+.menu_btn {
+  width: 100%;
+  margin: auto;
+  text-align: center;
 }
 
 .btn {
+  margin: 1em 1em;
   padding: 0.75em 1.25em;
   border: none;
   border-radius: 5px;
